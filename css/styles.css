@@ -1208,6 +1208,15 @@ p {
 @media (max-width: 720px) {
   html {
     scroll-behavior: auto;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body,
+  main,
+  section {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   body::after {
@@ -1224,6 +1233,7 @@ p {
   .container {
     width: calc(100% - 24px);
     max-width: var(--container);
+    min-width: 0;
   }
 
   .site-header {
@@ -1264,9 +1274,10 @@ p {
 
   h1 {
     max-width: 100%;
-    font-size: 29px;
+    font-size: 26px;
     line-height: 1.1;
     overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   h2 {
@@ -1322,13 +1333,22 @@ p {
   }
 
   .hero__content,
+  .hero__grid,
   .hero__lead,
   .hero-console,
   .console__grid,
+  .hero-strip,
   .glass-card,
   .glass-panel {
+    box-sizing: border-box;
     min-width: 0;
     max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .hero__lead {
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .button {
@@ -1415,7 +1435,7 @@ p {
 
 @media (max-width: 420px) {
   h1 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   h2 {
