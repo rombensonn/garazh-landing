@@ -147,6 +147,7 @@ h1 {
   font-size: 70px;
   line-height: 0.94;
   overflow-wrap: break-word;
+  word-break: normal;
 }
 
 h2 {
@@ -1221,13 +1222,13 @@ p {
   }
 
   .container {
-    width: calc(100vw - 24px);
+    width: calc(100% - 24px);
     max-width: var(--container);
   }
 
   .site-header {
     top: 8px;
-    width: calc(100vw - 20px);
+    width: calc(100% - 20px);
     margin-top: 8px;
     border-radius: 16px;
   }
@@ -1262,8 +1263,10 @@ p {
   }
 
   h1 {
-    font-size: 32px;
-    line-height: 1.08;
+    max-width: 100%;
+    font-size: 29px;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
   }
 
   h2 {
@@ -1314,7 +1317,18 @@ p {
   .final-cta__inner {
     padding: 20px;
     max-width: 100%;
+    min-width: 0;
     width: 100%;
+  }
+
+  .hero__content,
+  .hero__lead,
+  .hero-console,
+  .console__grid,
+  .glass-card,
+  .glass-panel {
+    min-width: 0;
+    max-width: 100%;
   }
 
   .button {
@@ -1401,7 +1415,7 @@ p {
 
 @media (max-width: 420px) {
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   h2 {
