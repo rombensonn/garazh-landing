@@ -1330,7 +1330,7 @@ p {
     padding: 20px;
     max-width: calc(100dvw - 24px);
     min-width: 0;
-    width: 100%;
+    width: calc(100dvw - 24px);
   }
 
   .hero__content,
