@@ -1,0 +1,7 @@
+tmp/
+assets/
+api/
+data/
+data/leads.json
+.DS_Store
+Thumbs.db

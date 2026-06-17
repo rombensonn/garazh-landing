@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rombensonn.github.io/garazh-landing/sitemap.xml
